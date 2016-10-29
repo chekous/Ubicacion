@@ -1,0 +1,62 @@
+<html>
+    <head>
+    <title>Pagina3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="estilo2.css" rel="stylesheet" type="text/css">
+              
+    </head>
+    
+    <body>
+        
+        
+        <div id="menu"></div>
+        <div id="boton-menu"></div>
+        <div id="mapa"></div>
+        <div id="botonera">
+            <button>Guardar Lugar</button>
+        </div>
+            
+    </body>
+    
+    
+    <script> 
+var map;
+        
+        window.addEventListener('load',localizar, true);
+        
+        function localizar(){
+            navigator.geolocation.getCurrentPosition(ubicacion);
+        }
+        
+         function ubicacion(datos){
+            longitud = datos.coords.longitude;
+             latitud = datos.coords.latitude;
+             initMap();
+        }
+function initMap() {
+  map = new google.maps.Map(document.getElementById('mapa'), {
+    center: {lat: latitud, lng: longitud},
+    zoom: 8
+  });
+    
+    var marker = new google.maps.Marker({
+        animation: google.maps.Animation.DROP,
+    position: {lat: latitud, lng: longitud},
+    map: map,
+        
+        label: 'Yo',
+    title: 'Aquí estoy'
+  });
+    
+    
+
+}
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFKU6B4iV1OUR4ysrwo14wPuVn1Xpb5rk">
+    </script>
+             
+         
+    
+</html>

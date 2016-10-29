@@ -1,0 +1,76 @@
+.nombre{
+    margin-left: 55px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    border-bottom-color: gray;
+    
+    
+}
+
+.correo{
+    margin-left: 55px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    border-bottom-color: gray;
+    
+    
+}
+
+.contrasena{
+    margin-left: 55px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    border-bottom-color: gray;
+    
+    
+}
+
+.registrar{
+     margin-left:  120px;
+    margin-top: 80px;
+    font-family: "Verdana";
+    font-size: 1.2em;
+      background: gold;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    transition: background 0.5s;
+    outline: none;
+    
+    
+}
+
+.registrar:active{
+    background: red;
+    transform: scale(.9);
+}
+
+.iniciar{
+    margin-left: 130px;
+    margin-top: 20px;
+    font-family: "Verdana";
+    font-size: 1.2em;
+    background: gold;
+    border: 2px solid white;
+     border-radius: 20px;
+    color: white;
+    transition: background 0.5s;
+    outline: none;
+}
+
+.iniciar:active{
+    background: red;
+    transform: scale(.9);
+}

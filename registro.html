@@ -1,0 +1,64 @@
+<html>
+    <head>
+    <title>REGISTRO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="estilo1.css" rel="stylesheet" type="text/css">
+              
+    </head>
+    
+    <body>
+        
+        <div>
+        
+            <input type="text" placeholder="Nombre" class="nombre">
+        </div>
+        
+        <div>
+            <input type="text" placeholder="Correo" class="correo">
+        </div>
+        
+         <div>
+            <input type="text" placeholder="Contraseña" class="contrasena">
+        </div>
+        
+        <div>
+        <button class="registrar">Registrar</button>
+        </div>
+        
+        <div>
+        <button class="iniciar">Iniciar</button>
+        </div>
+        
+        
+        
+    </body>
+    
+    <script>
+        function registrarUsuario(){
+            var nombre =
+                document.getElementById('nombreReg').value;
+            var correo =
+                document.getElementById('correoReg').value;
+            var contra =
+                document.getElementById('contraReg').value;
+            
+            if(localStorage.getItem('contador')){
+                localStorage.setItem('contador', 0);
+            }
+            
+            contador = localStorage.getItem('contador');
+            
+            console.log(contador);
+        }
+        
+    </script>
+    
+    
+    <style>
+        body{
+            background: linear-gradient(white,yellow)
+        }
+    </style>
+    
+</html>
